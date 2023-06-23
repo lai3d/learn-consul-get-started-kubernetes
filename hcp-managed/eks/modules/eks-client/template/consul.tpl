@@ -24,3 +24,9 @@ externalServers:
 
 server:
   enabled: false
+
+apiGateway:
+  enabled: true
+  image: "hashicorp/consul-api-gateway:${api_gateway_version}"
+  managedGatewayClass:
+    serviceType: LoadBalancer
